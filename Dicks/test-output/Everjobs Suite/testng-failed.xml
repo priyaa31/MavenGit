@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Everjobs Suite]">
+  <test name="ChromeTest(failed)">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="url"/>
+          <include name="Extent"/>
+          <include name="screenShot"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="Home"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.TestBase">
+        <methods>
+          <include name="url"/>
+          <include name="Extent"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.TestBase -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Everjobs Suite] -->
